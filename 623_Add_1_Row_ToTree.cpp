@@ -9,6 +9,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// T.C = O(n)    S.C = O(d) d = depth of the tree
+
 class Solution {
 public:
     // Function to add the new node with value = 'val'
