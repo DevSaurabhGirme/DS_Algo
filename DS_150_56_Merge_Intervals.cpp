@@ -3,7 +3,7 @@ public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) 
     {
         int n = intervals.size();
-
+        
         vector<vector<int>> result;
 
         // sorting based of start of the interval
