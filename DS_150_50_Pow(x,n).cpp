@@ -28,6 +28,6 @@ public:
 
     double myPow(double x, int n) 
     {
-        return solve(x, long int n);    
+        return solve(x, (long int) n);    
     }
 };

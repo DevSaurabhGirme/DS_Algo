@@ -7,7 +7,7 @@ public:
         // vector of type boolean that stores true or false according to index
         vector<bool> table(n, false)
 
-        // true: as we are standing on oth index
+        // true: as we are standing on 0th index
         table[0] = true;    
 
         for(int i = 0; i < n; i++)
