@@ -19,4 +19,10 @@ public:
 };
 
 
+<<<<<<< HEAD
 // basically this is just overwriting of values and the node address 
+=======
+// basically this is just overwriting of values and the node address
+// or say we are duplicating node->next in node and then pointing node to node->next->next
+// so basically we are removing node->next not node from given list
+>>>>>>> origin/master
