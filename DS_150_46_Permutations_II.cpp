@@ -6,13 +6,14 @@ public:
     {
         int n = nums.size();
 
-        // base case, reached at end of array
+        // base case, reached at end of the array
         if(Idx == n)
         {
             result.push_back(nums);
             return;
         }
 
+        // start i always with Idx
         for(int i = Idx; i < n; i++)
         {
             // try all possible sets of choices
