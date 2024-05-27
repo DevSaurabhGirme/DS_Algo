@@ -36,7 +36,6 @@ public:
         vector<vector<int>> result;
 
         int n = nums.size();
-
         vector<int> temp;
 
         Recur(temp, nums, result);
