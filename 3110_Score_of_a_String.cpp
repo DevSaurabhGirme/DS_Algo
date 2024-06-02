@@ -1,3 +1,5 @@
+// T.C = O(n)
+
 class Solution {
 public:
     int scoreOfString(string s) 
