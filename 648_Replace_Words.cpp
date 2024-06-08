@@ -21,7 +21,7 @@ public:
         // to store roots
         unordered_set<string> Roots_set(begin(dictionary), end(dictionary));
 
-        // sS now stores sentence and is ready to provide each word
+        // sS now stores our sentence and is ready to provide each word
         stringstream sS(sentence);
         string word;
 
