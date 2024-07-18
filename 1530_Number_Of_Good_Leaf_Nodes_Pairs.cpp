@@ -9,6 +9,8 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+// T.C = O(n^2)     S.C = O(n)
 class Solution {
 public:
     // build the graph from the tree for nodes traversal 
