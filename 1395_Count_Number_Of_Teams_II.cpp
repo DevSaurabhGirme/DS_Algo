@@ -44,9 +44,9 @@ public:
     {
         int n = rating.size();
         
-        // vector to store strictly ascending team
+        // vector to store strictly ascending rating team
         vector<int>ascend;
-        // vector to store strictly descending team
+        // vector to store strictly descending rating team
         vector<int>descend;
 
         solve1(rating, ascend, 0, -1);
