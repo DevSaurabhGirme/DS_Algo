@@ -1,0 +1,47 @@
+// T.C = O(m+n)     S.C = O(m+n)
+
+class Solution {
+public:
+    bool areSentencesSimilar(string s1, string s2) 
+    {
+        if(s1.length() < s2.length())
+            swap(s1, s2);
+    
+        deque<string> deq1;
+        deque<string> deq2;
+
+        stringstream ss1(s1);
+        string token;
+        // retrieve each word from ss1
+        while(ss1 >> token)
+        {
+            deq1.push_back(token);
+        }
+    
+        stringstream ss2(s2);
+
+        // retrieve each word from ss2
+        while(ss2 >> token)
+        {
+            deq2.push_back(token);
+        }
+
+        while(!deq1.empty() && !deq2.empty() && deq1.front() == deq2.front())
+        {
+            deq1.pop_front();
+            deq2.pop_front();
+        }
+        
+        while(!deq1.empty() && !deq2.empty() && deq1.back() == deq2.back())
+        {
+            deq1.pop_back();
+            deq2.pop_back();
+        }   
+
+        if(deq2.empty())
+            return true;
+  
+        return false;
+
+    }
+};
